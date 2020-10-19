@@ -21,3 +21,7 @@ base_on.forEach(function (items) {
   items.style.color = 'red';
   items.style.padding = '0.375rem';
 });
+
+// for last li classes
+const last = document.querySelector('li:last-child');
+last.style.color = 'green';
