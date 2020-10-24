@@ -3,24 +3,19 @@
 // node-list = array like object
 // index, length property but not array method
 
-const heading = document.getElementsByTagName('h2');
-// console.log(heading); //output total h2 but array like object
-heading[1].style.color = 'red'; //hello there-2 will red
-heading[0].style.textTransform = 'uppercase';
+const list_manga = document.getElementsByTagName('li');
+console.log(list_manga); //here will result node-list like [li,li,li] use index
 
-const listItem = document.getElementsByTagName('li');
-console.log(listItem);
-// output list: 0:l1 , 1:li , 2:li
+// change naruto be capitalize
+list_manga[1].style.textTransform = 'capitalize';
 
-listItem[0].style.fontSize = '1.25rem'; //lutfy fontsize will 20px;
-
-// copy object
-const getObject = [...listItem];
-
-getObject.forEach(function (item) {
-  item.style.fontSize = '1rem';
-  item.style.listStyleType = 'none';
-  item.style.background = '#333';
-  item.style.width = '400px';
-  item.style.color = '#ffff';
+// if use forEach copy obj use spread operator
+// if not will not work
+const newListManga = [...list_manga];
+newListManga.forEach(function (items) {
+  items.style.textTransform = 'uppercase';
+  items.style.padding = '1.25rem 0rem';
 });
+
+// add background on the last index be blue color
+newListManga[newListManga.length - 1].style.background = 'blue';
