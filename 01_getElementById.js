@@ -1,20 +1,24 @@
-// getElementById for element ID on html
-// u can apply style whatever u want
+// getElementById() for select only id on html
+// for giving effect too
 
-// u can use this style
-document.getElementById('title').style.color = 'red';
-
-// but for multiple element prefer like this use variable
+// u should use declare variable because if multiple is very efisien
 const title = document.getElementById('title');
-const btn = document.getElementById('btn');
+title.style.color = 'blue'; //change h1 title be blue
+title.style.textTransform = 'uppercase'; //be uppercase
 
-// for title
-title.style.textTransform = 'UpperCase';
-title.style.color = 'blue';
+// if not declare and use multiple method not efisien and code be long
+// document.getElementById('title').style.color = 'coral';
+// document.getElementById('title').style.textTransform = 'uppercase';
 
-// for btn
-btn.style.padding = '0.375rem 1.25rem';
-btn.style.background = '#333';
-btn.style.color = '#fff';
-btn.style.textDecoration = 'none';
-btn.style.textTransform = 'UpperCase';
+// container & btn
+const container = document.getElementById('container');
+const button = document.getElementById('btn');
+
+container.style.background = '#333';
+container.style.width = '400px';
+
+button.style.textTransform = 'uppercase';
+button.style.fontSize = '1.25rem';
+button.style.background = '#ddd';
+button.style.color = '#333';
+button.style.margin = '0.75rem';

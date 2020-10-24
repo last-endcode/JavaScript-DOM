@@ -1,20 +1,26 @@
-// getElementByTagName
-// node-list = array-like objecct
-// index, length property but not array methods
+// For Tag name like h1,h2, etc...
+//getElementById('tagname')
+// node-list = array like object
+// index, length property but not array method
 
 const heading = document.getElementsByTagName('h2');
-console.log(heading.length); //2
-heading[1].style.color = 'blue';
+// console.log(heading); //output total h2 but array like object
+heading[1].style.color = 'red'; //hello there-2 will red
+heading[0].style.textTransform = 'uppercase';
 
-const list = document.getElementsByTagName('li');
-console.log(list.length); //4
+const listItem = document.getElementsByTagName('li');
+console.log(listItem);
+// output list: 0:l1 , 1:li , 2:li
 
-// before use forEach copy obj items
-const items = [...list];
+listItem[0].style.fontSize = '1.25rem'; //lutfy fontsize will 20px;
 
-items[items.length - 1].style.color = 'red';
-items[items.length - 1].style.textTransform = 'uppercase';
-// use forEach()
-// const listItem = items.forEach(function (item) {
-//   console.log(item);
-// });
+// copy object
+const getObject = [...listItem];
+
+getObject.forEach(function (item) {
+  item.style.fontSize = '1rem';
+  item.style.listStyleType = 'none';
+  item.style.background = '#333';
+  item.style.width = '400px';
+  item.style.color = '#ffff';
+});

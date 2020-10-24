@@ -1,14 +1,16 @@
-// getElementByClassName
-// node-list = array-like objecct
-// index, length property but not array methods
+// getElementByClassName('classname')
+// For class name
+// node-list = array like object
+// index, length property but not array method
 
-const listItems = document.getElementsByClassName('debian-based-on');
-console.log(listItems); //on console show only class use .debian-based-on
+const listClass = document.getElementsByClassName('special');
+console.log(listClass);
+/* output node-list:
+0:li.special
+1:li.special
+2:li.special */
+console.log(listClass.length); // 3
 
-// change color for index 1 (debian) be red
-// remember here html just 3 classes has debian-based-on
-// so index array has 0,1,2 (ubuntu,debian,linux mint)
-listItems[0].style.color = 'coral'; //ubuntu
-listItems[1].style.color = 'red'; //debian
-listItems[2].style.color = 'green'; //linux mint
-listItems[3].style.color = 'navy'; //undefinded cz not array index 3
+// change index 1 zoro be green and font size: 2rem
+listClass[1].style.color = 'green';
+listClass[1].style.fontSize = '2rem';

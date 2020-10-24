@@ -4,92 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
+    <style>
+      a {
+        display: inline-block;
+        color: #fff;
+        background: #333;
+        text-decoration: none;
+        padding: 0.375rem 1.25rem;
+      }
+    </style>
   </head>
   <body>
-    <!--for getElementById  -->
-    <!-- <h1 id="title">DOM getElementById</h1>
-    <a href="#" id="btn" class="btn">example</a> -->
+    <!-- 1 getElementById() -->
+    <!-- <div class="container" id="container">
+      <h1 id="title">Hello there</h1>
+      <a href="#" id="btn">example</a>
+    </div> -->
 
-    <!-- for getElementByTagName -->
-    <!-- <h2>DOM getElementByTagName</h2>
-    <h2>DOM getElementByTagName 2</h2>
-
+    <!-- 2 getElementByTagName
+    <h2>Hello There</h2>
+    <h2>Hello There-2</h2>
     <ul>
-      <li>linux mint</li>
-      <li>ubuntu</li>
-      <li>manjaro</li>
-      <li>fedora</li>
+      <li>lutfy</li>
+      <li>zoro</li>
+      <li>sanji</li>
     </ul> -->
 
-    <!-- for getElementByClassName -->
-    <!-- <h2>DOM getElementByClassName</h2>
+    <!-- 3 getElementByClassName
     <ul>
-      <li class="debian-based-on">ubuntu</li>
-      <li>manjaro</li>
-      <li>archlinux</li>
-      <li class="debian-based-on">debian</li>
-      <li>fedora</li>
-      <li>opensuse</li>
-      <li class="debian-based-on">linux mint</li>
+      <li class="special">Lutfi</li>
+      <li class="special">Zoro</li>
+      <li class="special">Sanji</li>
     </ul> -->
 
-    <!-- for getQuerySelector -->
-    <!-- <h2>DOM querySelector & querySelectorAll</h2>
+    <!-- 4 querySelector
+    <ul id="listItem">
+      <h2>SHP</h2>
+      <li class="shp">luffy</li>
+      <li class="shp">zoro</li>
+      <li class="shp">sanji</li>
+      <h2>RHP</h2>
+      <li class="rhp">shanks</li>
+      <li class="rhp">benbackman</li>
+      <li class="rhp">yasop</li>
+    </ul> -->
+
+    <!-- 5 children
     <ul id="result">
-      <li class="debian-based-on">ubuntu</li>
-      <li>manjaro</li>
-      <li>archlinux</li>
-      <li class="debian-based-on">debian</li>
-      <li>fedora</li>
-      <li>opensuse</li>
-      <li class="debian-based-on last">linux mint</li>
+      <h2 class="title">Okeee</h2>
+      <li>hello</li>
+      <li>hello2</li>
     </ul> -->
 
-    <!-- childNodes
-    <ul id="result">
-      <li>linux manjaro</li>
-      <li>debian</li>
-      <li>debian</li>
-    </ul> -->
-
-    <!-- parentElement
-    <header id="header">
-      <div class="container">
-        <h1 id="title-1">The heading one</h1>
-        <h2 id="title-2">The heading two</h2>
-        <h3 id="title-2">The heading two</h3>
-        <h4 id="title-2">The heading two</h4>
-        <h5 id="title-2">The heading two</h5>
-      </div>
-    </header> -->
-
-    <!-- nextSibling, previousSibling
-    //
-    nextElementSibling, previousElementSibling
-    -->
-    <!-- <ul class="list-items">
-      <li>ubuntu</li>
-      <li id="first">manjaro</li>
-      <li>debian</li>
-      <li class="last">crunchbang</li>
-    </ul>
-
-    <h1>hello</h1> -->
-
-    <!-- textContent -->
+    <!-- 6 parentElement
     <div class="container">
-      <h2 id="title">The heading 2</h2>
-    </div>
+      <h3>this is a hello world</h3>
+      <h2>hello world by dncode</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias,
+        distinctio!
+      </p>
+    </div> -->
+
+    <!-- 7 NextSibling, Previous Sibling
+    <ul id="result">
+      <li>hello1</li>
+      <li>hello2</li>
+      <li id="last">hello3</li>
+    </ul> -->
+
+    <!-- <h1>hohoho</h1> -->
+    <!-- NextElementSibling , previouselement
+    <ul id="result">
+      <li>hello1</li>
+      <li>hello2</li>
+      <li id="last">hello3</li>
+    </ul> -->
 
     <!-- source js -->
     <!-- <script src="/01_getElementById.js"></script> -->
     <!-- <script src="/02_getElementByTagName.js"></script> -->
     <!-- <script src="/03_getElementByClassName.js"></script> -->
     <!-- <script src="/04_querySelector.js"></script> -->
-    <!-- <script src="/05_parentElement.js"></script> -->
-    <!-- <script src="/06_childNodes.js"></script> -->
+    <!-- <script src="/05_children.js"></script> -->
+    <!-- <script src="/06_parentElement.js"></script> -->
     <!-- <script src="/07_nextSibling_previous.js"></script> -->
-    <!-- <script src="/08_nextElementSibling_previous.js"></script> -->
-    <script src="/09_textContent.js"></script>
+    <script src="/08_nextElementSibling_previous.js"></script>
+    <!-- <script src="/09_textContent.js"></script> -->
+    <!-- <script src="/10_getAttribute.js"></script> -->
   </body>
 </html>

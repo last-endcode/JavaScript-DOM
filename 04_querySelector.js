@@ -3,25 +3,32 @@ querySelector - for single
 querySelectorAll - for multiple
 */
 
-const result = document.querySelector('#result');
-// change background ul use querySelector (single)
-result.style.backgroundColor = '#333';
-result.style.color = '#fff';
+const listItem = document.querySelector('#listItem');
+// change background ul
+listItem.style.background = '#333';
+listItem.style.color = '#ddd';
 
-let base_on = document.querySelector('.debian-based-on');
-console.log(base_on); //ubuntu cz use single querySelector
+// if only querySelector, show just first
+let shp = document.querySelector('.shp');
+console.log(shp); //lutfy
+// if use querySelectorAll
+shp = document.querySelectorAll('.shp');
+console.log(shp); //show node-list all
 
-base_on = document.querySelectorAll('.debian-based-on');
-console.log(base_on); //3 show use classes debian cz use multiple querySelectorAll
-
-// use forEach()
-base_on.forEach(function (items) {
-  console.log(items);
+// SHP
+const shpObject = [...shp];
+shpObject.forEach(function (items) {
   items.style.textTransform = 'uppercase';
-  items.style.color = 'red';
-  items.style.padding = '0.375rem';
+  items.style.fontSize = '1.25rem';
 });
 
-// for last li classes
-const last = document.querySelector('li:last-child');
-last.style.color = 'green';
+// RHP
+const rhp = document.querySelectorAll('.rhp');
+const rhpObject = [...rhp];
+rhpObject.forEach(function (items) {
+  items.style.textTransform = 'Capitalize';
+  items.style.fontSize = '1.25rem';
+});
+
+const memberRHP = document.querySelector('li:last-child');
+console.log(memberRHP);

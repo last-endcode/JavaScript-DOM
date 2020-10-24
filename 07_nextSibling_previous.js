@@ -2,15 +2,14 @@
 // previousSibling
 // remember return white space too
 
-const ul_list = document.querySelector('.list-items');
-// if only nextSibling will #text cz read white space
-console.log(ul_list.nextSibling.nextSibling.nextSibling.nextSibling); //<~--source js -->
+const li_one = document.querySelector('li');
+// index 1 be red
+li_one.nextSibling.nextSibling.style.color = 'red';
+// index 2 be blue
+li_one.nextSibling.nextSibling.nextSibling.nextSibling.style.color = 'blue';
 
-const manjaroNext = document.querySelector('#first');
-console.log(manjaroNext.nextSibling.nextSibling); //debian
-
-const crunchBangPrevious = document.querySelector('.last');
-console.log(crunchBangPrevious.previousSibling.previousSibling); //debian
-
-const crunchBangNext = document.querySelector('.last');
-console.log(crunchBangNext.nextSibling.nextSibling); //null
+// use previous
+const last = document.querySelector('#last');
+console.log(
+  (last.previousSibling.previousSibling.style.textTransform = 'uppercase')
+);
