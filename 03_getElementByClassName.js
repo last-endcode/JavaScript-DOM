@@ -3,14 +3,14 @@
 // node-list = array like object
 // index, length property but not array method
 
-const listClass = document.getElementsByClassName('special');
-console.log(listClass);
-/* output node-list:
-0:li.special
-1:li.special
-2:li.special */
-console.log(listClass.length); // 3
+const background = document.getElementsByClassName('container');
+const list_item = document.getElementsByClassName('list-item');
 
-// change index 1 zoro be green and font size: 2rem
-listClass[1].style.color = 'green';
-listClass[1].style.fontSize = '2rem';
+// remember if write this without index will undefined
+// cause background result is use node-list index
+// background.style.background = 'blue'; //wrong
+background[0].style.background = 'blue';
+background[0].style.height = '40vh';
+
+list_item[0].style.color = 'white';
+list_item[0].style.textTransform = 'uppercase';
