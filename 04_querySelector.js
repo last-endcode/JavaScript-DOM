@@ -3,32 +3,32 @@ querySelector - for single
 querySelectorAll - for multiple
 */
 
-const listItem = document.querySelector('#listItem');
-// change background ul
-listItem.style.background = '#333';
-listItem.style.color = '#ddd';
+// querySelector
+const memberShp = document.querySelector('#shp');
+console.log(memberShp); //not node list output show element id shp
+// so u can add background without index
+memberShp.style.background = '#333';
+memberShp.style.width = '16rem';
 
-// if only querySelector, show just first
-let shp = document.querySelector('.shp');
-console.log(shp); //lutfy
-// if use querySelectorAll
-shp = document.querySelectorAll('.shp');
-console.log(shp); //show node-list all
+//querySelectorAll
+const allMember = document.querySelectorAll('#shp');
+// check use log if node-list use index
+console.log(allMember); //here is node-list
 
-// SHP
-const shpObject = [...shp];
-shpObject.forEach(function (items) {
+const allMembers = [...allMember];
+allMembers.forEach(function (items) {
+  items.style.color = '#fff';
   items.style.textTransform = 'uppercase';
-  items.style.fontSize = '1.25rem';
+  items.style.padding = '2rem';
 });
 
-// RHP
-const rhp = document.querySelectorAll('.rhp');
-const rhpObject = [...rhp];
-rhpObject.forEach(function (items) {
-  items.style.textTransform = 'Capitalize';
-  items.style.fontSize = '1.25rem';
-});
+// here u should use querySelector, so why?
+// because only querySelector only acces for first
+// change first-child be red background and actuallly
+// u can write without first-child if want change lutfy be red
+const beRed = document.querySelector('li');
+beRed.style.background = 'coral';
 
-const memberRHP = document.querySelector('li:last-child');
-console.log(memberRHP);
+// and last-child be blue
+const beBlue = document.querySelector('li:last-child');
+beBlue.style.background = 'blue';
