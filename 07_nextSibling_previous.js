@@ -1,15 +1,12 @@
 // nextSibling
 // previousSibling
-// remember return white space too
+// remember return white space too and comment html
 
-const li_one = document.querySelector('li');
-// index 1 be red
-li_one.nextSibling.nextSibling.style.color = 'red';
-// index 2 be blue
-li_one.nextSibling.nextSibling.nextSibling.nextSibling.style.color = 'blue';
+const nextSubtitle = document.querySelector('h3');
+// h2 main-title if one nexSibling result #text
+// cause nextSibling read white space too remember!
+console.log(nextSubtitle.nextSibling.nextSibling);
 
-// use previous
-const last = document.querySelector('#last');
-console.log(
-  (last.previousSibling.previousSibling.style.textTransform = 'uppercase')
-);
+const previousTitle = document.querySelector('h2');
+// h3 sub-title
+console.log(previousTitle.previousSibling);
