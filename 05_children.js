@@ -6,15 +6,20 @@
 // firstChild
 // lastChild
 
-const result = document.querySelector('#result');
-// output get 7 length include white space
-console.log(result.childNodes);
+// CHILD
+const child = document.querySelector('#shp');
+//total 9 cz with white space
+console.log(child.childNodes);
+//total 4 li#member cz without space just element child
+// following all child in #shp :
+console.log(child.children);
 
-// if use children not include white space
-console.log(result.children);
-// output : h2.title, li , li
-console.log(result.children.length); //3
+// example u should use child.children
+const allChild = [...child.children];
+allChild.forEach(function (items) {
+  items.style.background = 'blue';
+});
 
-// firstChild  & lastChild this gonna be text
-console.log(result.firstChild);
-console.log(result.lastChild);
+// first-child and last-child
+console.log(child.firstChild);
+console.log(child.lastChild);
