@@ -1,13 +1,12 @@
-// textContent get content text
+// textContent for getText
+// same with childNodes
 
-const item = document.querySelector('#title');
+const useChildNodes = document.querySelector('h3');
+// only childNodes get index node-list, so use []
+// if not will undefined
+// if not use nodeValue will write like "Hello people"
+console.log(useChildNodes.childNodes[0].nodeValue);
 
-// use nodeValue
-// u should .nodevalue if not will use ""
-const node_values = item.childNodes[0].nodeValue;
-console.log(node_values);
-// output : The heading 2
-
-// use textContent
-const getText = item.textContent;
-console.log(getText);
+// but for efisien use textContent
+const useTextContent = document.querySelector('h2');
+console.log(useTextContent.textContent);
