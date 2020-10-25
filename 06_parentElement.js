@@ -1,17 +1,16 @@
 // parentElement
-// for knowing where your classes parent
+// for knowing where your classes or id
 
-const yourParent = document.querySelector('p');
-// result is .container
-console.log(yourParent.parentElement);
-// result is body
-console.log(yourParent.parentElement.parentElement);
-// result is /html
-console.log(yourParent.parentElement.parentElement.parentElement);
-// result is null
-console.log(yourParent.parentElement.parentElement.parentElement.parentElement);
+const myParent = document.querySelector('.members');
+// ul #shp is parent
+console.log(myParent.parentElement);
+// div .container is parent
+console.log(myParent.parentElement.parentElement);
+// body is parent and if add parentElement again will null
+console.log(myParent.parentElement.parentElement.parentElement);
 
-// example change background .container
-const background = yourParent.parentElement;
-background.style.background = 'blue';
-background.style.textTransform = 'uppercase';
+// example
+const bodyBackground = document.querySelector('.container');
+const containerColor = document.querySelector('#shp');
+containerColor.parentElement.style.color = '#fff';
+bodyBackground.parentElement.style.background = '#333';
