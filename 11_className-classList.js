@@ -29,3 +29,12 @@ second.classList.add('text');
 // remove class first colors red
 first.classList.remove('colors');
 first.classList.add('text');
+
+third.classList.add('colors');
+// check use contains
+let checked = third.classList.contains('colors');
+if (checked) {
+  console.log('have a class' + checked);
+} else {
+  console.log('not have the class');
+}
