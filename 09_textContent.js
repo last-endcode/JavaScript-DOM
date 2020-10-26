@@ -10,3 +10,5 @@ console.log(useChildNodes.childNodes[0].nodeValue);
 // but for efisien use textContent
 const useTextContent = document.querySelector('h2');
 console.log(useTextContent.textContent);
+// here textContent can change element h2 too
+useTextContent.textContent = 'Change Text Content h2';
