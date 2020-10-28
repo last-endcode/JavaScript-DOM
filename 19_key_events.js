@@ -4,9 +4,10 @@
 
 const inputName = document.querySelector('.inputName');
 
-inputName.addEventListener('keypress', function () {
-  console.dir('u r press key');
-});
+//
+// inputName.addEventListener('keypress', function () {
+//   console.dir('u r press key');
+// });
 
 // inputName.addEventListener('keydown', function () {
 //   console.log('u r press key');
