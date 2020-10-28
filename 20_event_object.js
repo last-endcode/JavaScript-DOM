@@ -5,24 +5,20 @@
 // this keyword
 // preventDefault() - prevents default behaviour
 
-const heading = document.querySelector('h1');
 const btn = document.querySelector('.btn');
-const link = document.querySelector('#link');
-
-heading.addEventListener('click', function (e) {
-  e.currentTarget.classList.add('blue');
-});
+const heading = document.querySelector('h1');
+const link = document.getElementById('link');
 
 btn.addEventListener('click', function (e) {
+  // console.log(this); //<button class="btn">click me</button>
+  // console.log(e.currentTarget); //<button class="btn">click me</button>
   e.currentTarget.classList.add('red');
-  //   for check type event listener
-  console.log(e.type); //click
 });
 
-// // callback as reference
-function callink(e) {
-  //   //will undefined and if link click not back again to top
-  console.log(e.preventDefault());
+function callLink(e) {
+  // here link can't scroll top again
+  // will stuck cz preventDefault()
+  e.preventDefault();
 }
 
-link.addEventListener('click', callink);
+link.addEventListener('click', callLink);
