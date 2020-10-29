@@ -16,6 +16,11 @@
         text-transform: uppercase;
       } */
 
+      .black {
+        color: #333;
+        font-weight: bold;
+      }
+
       .red {
         colors: white;
         background: red;
@@ -31,9 +36,19 @@
         text-transform: uppercase;
       }
 
-      a {
+      /* a {
         display: inline-block;
         margin-top: 100vh;
+      } */
+
+      .btn {
+        display: block;
+        color: white;
+        background: red;
+        padding: 15px;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin: 10px;
       }
     </style>
   </head>
@@ -155,10 +170,47 @@
     <!-- key events
     <input type="text" class="inputName" /> -->
 
-    <!-- even object -->
+    <!-- even object
     <button class="btn">click me</button>
     <h1>some heading</h1>
-    <a href="#" id="link">random link</a>
+    <a href="#" id="link">random link</a> -->
+
+    <!-- currentTarget vs target
+    <button class="btn">
+      first button
+      <h3>the heading</h3>
+    </button>
+    <button class="btn">
+      second <strong>button <strong>more nested</strong></strong>
+    </button>
+    <button class="btn">
+      third button
+      <p>lorem10</p>
+    </button> -->
+
+    <!-- event propogation_bubbling_capturing
+    <div class="container">
+      <ul class="list-items">
+        <li class="item"><a href="#" class="link">link</a></li>
+        <li class="item"><a href="#" class="link">link</a></li>
+        <li class="item"><a href="#" class="link">link</a></li>
+      </ul>
+    </div> -->
+
+    <!-- example
+    <div class="container">
+         </div>
+    <button class="btn">clicked</button> -->
+
+    <!-- forms event submit -->
+    <!-- <form action="" id="form">
+      <input type="text" id="name" />
+      <input type="password" id="password" />
+      <input type="submit" value="submit"></input>
+    </form> -->
+
+    <!-- localStorage -->
+    <h1>Local Storage</h1>
     <!-- source js -->
     <!-- <script src="/01_getElementById.js"></script> -->
     <!-- <script src="/02_getElementByTagName.js"></script> -->
@@ -179,6 +231,11 @@
     <!-- <script src="/17.addEventListener.js"></script> -->
     <!-- <script src="/18_function_reference.js"></script> -->
     <!-- <script src="/19_key_events.js"></script> -->
-    <script src="/20_event_object.js"></script>
+    <!-- <script src="/20_event_object.js"></script> -->
+    <!-- <script src="/21_currentTarget_target.js"></script> -->
+    <!-- <script src="/22_propogation_bubbling_capturing.js"></script> -->
+    <!-- <script src="/23_example.js"></script> -->
+    <!-- <script src="/24_forms_event_submit.js"></script> -->
+    <script src="/25_local_storage.js"></script>
   </body>
 </html>
