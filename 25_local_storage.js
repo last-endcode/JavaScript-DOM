@@ -21,4 +21,4 @@ localStorage.setItem('address', 'street heaven god');
 localStorage.setItem('telp', '+628 9999 797979');
 
 // and for whole remove storage use clear
-localStorage.clear(); //remove all key on storage
+// localStorage.clear(); //remove all key on storage
